@@ -12,6 +12,12 @@
 		8CDA83EA1F6A72FD00D57FCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CDA83E91F6A72FD00D57FCD /* Assets.xcassets */; };
 		8CDA83ED1F6A72FD00D57FCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CDA83EB1F6A72FD00D57FCD /* LaunchScreen.storyboard */; };
 		8CDA83F61F6A73D600D57FCD /* UIReorderableCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDA83F51F6A73D600D57FCD /* UIReorderableCollectionView.swift */; };
+		8CDA83F81F6A74F500D57FCD /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDA83F71F6A74F500D57FCD /* Order.swift */; };
+		8CDA83FA1F6A750C00D57FCD /* ListOrders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDA83F91F6A750C00D57FCD /* ListOrders.swift */; };
+		8CDA83FC1F6A752800D57FCD /* ListOrdersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDA83FB1F6A752800D57FCD /* ListOrdersPresenter.swift */; };
+		8CDA83FE1F6A753D00D57FCD /* ListOrdersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDA83FD1F6A753D00D57FCD /* ListOrdersInteractor.swift */; };
+		8CDA84001F6A754F00D57FCD /* ListOrdersViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDA83FF1F6A754F00D57FCD /* ListOrdersViewCell.swift */; };
+		8CDA84021F6A756A00D57FCD /* ListOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDA84011F6A756A00D57FCD /* ListOrdersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		8CDA83EC1F6A72FD00D57FCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CDA83EE1F6A72FD00D57FCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CDA83F51F6A73D600D57FCD /* UIReorderableCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIReorderableCollectionView.swift; sourceTree = "<group>"; };
+		8CDA83F71F6A74F500D57FCD /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		8CDA83F91F6A750C00D57FCD /* ListOrders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrders.swift; sourceTree = "<group>"; };
+		8CDA83FB1F6A752800D57FCD /* ListOrdersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrdersPresenter.swift; sourceTree = "<group>"; };
+		8CDA83FD1F6A753D00D57FCD /* ListOrdersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrdersInteractor.swift; sourceTree = "<group>"; };
+		8CDA83FF1F6A754F00D57FCD /* ListOrdersViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrdersViewCell.swift; sourceTree = "<group>"; };
+		8CDA84011F6A756A00D57FCD /* ListOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrdersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				8CDA83E61F6A72FD00D57FCD /* Main.storyboard */,
+				8CDA84011F6A756A00D57FCD /* ListOrdersViewController.swift */,
+				8CDA83FF1F6A754F00D57FCD /* ListOrdersViewCell.swift */,
+				8CDA83FD1F6A753D00D57FCD /* ListOrdersInteractor.swift */,
+				8CDA83FB1F6A752800D57FCD /* ListOrdersPresenter.swift */,
+				8CDA83F91F6A750C00D57FCD /* ListOrders.swift */,
+				8CDA83F71F6A74F500D57FCD /* Order.swift */,
 				8CDA83F51F6A73D600D57FCD /* UIReorderableCollectionView.swift */,
 				8CDA83F41F6A73B900D57FCD /* Supporting */,
 			);
@@ -144,8 +162,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CDA84001F6A754F00D57FCD /* ListOrdersViewCell.swift in Sources */,
+				8CDA83F81F6A74F500D57FCD /* Order.swift in Sources */,
 				8CDA83F61F6A73D600D57FCD /* UIReorderableCollectionView.swift in Sources */,
+				8CDA84021F6A756A00D57FCD /* ListOrdersViewController.swift in Sources */,
+				8CDA83FA1F6A750C00D57FCD /* ListOrders.swift in Sources */,
 				8CDA83E31F6A72FD00D57FCD /* AppDelegate.swift in Sources */,
+				8CDA83FC1F6A752800D57FCD /* ListOrdersPresenter.swift in Sources */,
+				8CDA83FE1F6A753D00D57FCD /* ListOrdersInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +308,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E5MUM2UUR3;
-				INFOPLIST_FILE = CleanList/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CleanList/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.NeilSmithDesignLTD.CleanList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -299,7 +323,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E5MUM2UUR3;
-				INFOPLIST_FILE = CleanList/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CleanList/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.NeilSmithDesignLTD.CleanList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
